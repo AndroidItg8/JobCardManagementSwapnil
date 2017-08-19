@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txt_set"
+        style="@style/TextViewBottomStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SET" />
+
+    <TextView
+        android:id="@+id/txt_cancel"
+        style="@style/TextViewBottomStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="CANCEL" />
+
+    <ListView
+
+        android:id="@+id/list_exterior_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_set"
+        android:choiceMode="singleChoice"
+        android:divider="@color/colorPrimary"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/colorPrimary" />
+
+</RelativeLayout>

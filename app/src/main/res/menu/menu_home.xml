@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.itg.jobcardmanagement.home.MainActivity">
+
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/action_qr"
+        android:icon="@drawable/ic_qr_code"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_add_circle_outline_black_24dp"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="@string/action_logout"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_qr_scan"
+        android:orderInCategory="100"
+        android:title="@string/action_qr_scan"
+        app:showAsAction="never" />
+
+
+</menu>

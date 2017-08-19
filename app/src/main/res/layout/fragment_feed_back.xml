@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <RadioGroup
+            android:id="@+id/rgb_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RadioButton
+                android:id="@+id/rgb_fed_sad"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/ic_sad"
+                android:gravity="center"
+                android:text="Sad"
+                android:textColor="#48A0DC" />
+
+            <RadioButton
+                android:id="@+id/rgb_fed_happy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/ic_happy"
+                android:gravity="center"
+                android:text="Happy"
+                android:textColor="#C03A2B" />
+
+            <RadioButton
+                android:id="@+id/rgb_fed_aw"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/ic_awesome"
+                android:gravity="center"
+                android:text="awesome"
+                android:textColor="#AF8066" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_feedback"
+        android:layout_margin="10dp">
+
+        <android.support.v7.widget.AppCompatRatingBar
+            android:id="@+id/rb_service"
+            style="@style/ratingStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_service"
+            android:numStars="5"
+            android:rating="2"
+            android:stepSize=".5"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/lbl_service"
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:hint=" Your Opinion matters for Us..!! "
+            android:padding="10dp"
+            android:textColorHint="#000"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_service"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:hint="We work for super hard to make close to better for you "
+            android:textColorHint="@color/colorGray"
+            android:textStyle="normal"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
